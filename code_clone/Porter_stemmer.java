@@ -57,7 +57,7 @@ public class Porter_stemmer {
             }
             return input;
         }
-        // (*v*) ING ->
+
         if (input.endsWith("ing")) {
             String stem = input.substring(0, input.length() - 3);
             String letterTypes = getLetterTypes(stem);
