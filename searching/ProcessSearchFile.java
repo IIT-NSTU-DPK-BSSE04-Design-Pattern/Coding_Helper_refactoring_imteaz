@@ -14,7 +14,7 @@ public class ProcessSearchFile {
 
     public void processMethod(String filename, String fileContent, String filepath, String processfilePath) throws IOException {
         String currentpath = Command.currentPath;
-        String current = currentpath.replaceAll("\\\\", "-").replace(":", "");//location of current file
+        String current = currentpath.replaceAll("\\\\", "-").replace(":", "");
         String stemWord = "";
         PreProcessing ob = new PreProcessing();
         String removePuncuation = ob.removePunctuation(fileContent);
