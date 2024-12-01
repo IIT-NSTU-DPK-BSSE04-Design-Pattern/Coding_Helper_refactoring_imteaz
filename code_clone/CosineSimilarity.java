@@ -17,14 +17,14 @@ public class CosineSimilarity {
             //int k = CloneCheck.ProjectFileName2.size();
             similar = new double[CloneCheck.ProjectFileName2.size()];
             int count = 0;
-            // similar = new double[TfIdfCalculate.tfidfvectorProject2.size() + 1];
+
             for (int j = 0; j < CloneCheck.ProjectFileName2.size(); j++) {
                 similarity = cosineSimilarity(TfIdfCalculate.tfidfvectorProject1.get(i), TfIdfCalculate.tfidfvectorProject2.get(j));
                 BigDecimal bd = new BigDecimal(similarity).setScale(2, RoundingMode.HALF_UP);
                 double getSimilar = bd.doubleValue();
                 System.out.println(CloneCheck.ProjectFileName1.get(i) + " vs " + CloneCheck.ProjectFileName2.get(j) + " " + getSimilar + "%");
                 similar[count] = similarity;
-             //   clone.add(similarity);
+
 
                 count++;
             }
