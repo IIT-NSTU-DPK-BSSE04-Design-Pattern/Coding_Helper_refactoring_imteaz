@@ -57,7 +57,7 @@ public class CompressedFileWriteHelper extends FileWriteHelper {
 		}
 	}
 
-	
+	//code
 	@Override
 	public void doWork(int currentByte) {
 		byteBuffer += map.get((char) currentByte);
