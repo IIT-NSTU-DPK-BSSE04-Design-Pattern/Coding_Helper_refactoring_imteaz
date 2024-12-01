@@ -77,9 +77,8 @@ public class Command {
 
             } else if (choice.equalsIgnoreCase("search") | choice.equalsIgnoreCase("3")) {
                 System.out.print("\tWrite \"query\" and projectname:");
-                //   System.out.println("x=" + currentPath);
                 Search(currentPath);
-                //  projectPath();
+
             } else if (choice.equalsIgnoreCase("4")| choice.equalsIgnoreCase("Metrics")) {
                 System.out.println("\t4.Metrics\n\t\tJava File Count-->fc\n\t\tMethod  Count-->mc\n\t\tLine of Code-->loc\n\t\tAverage LOC of a class");
 
